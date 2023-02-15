@@ -76,20 +76,19 @@ class WorkTimeParser {
 }
 class Ideone{
 	public static void main(String[] args) {
-	    String[][] arr = new String[][] {
-	        {"ИВАНОВ ИВАН ИВАНОВИЧ", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", ""},
-	        {"ИВАНОВ ИВАН ИВАНОВИЧ", "08:00-12:00", "08:00-10:00", "08:00-16:00", "", "", "", ""},
-	        {"ПЕТРОВ ПЕТР ПЕТРОВИЧ", "12:00-16:00", "", "12:00-16:00", "", "12:00-16:00", "", ""},
-	        // ...
-	    };
-	
-	    WorkTimeParser parser = new WorkTimeParser();
-	    String[][] result = parser.prepareWorkTime(arr);
-		
-	    for (String[] row : result) {
-	        System.out.println(Arrays.toString(row));
-	    }
+		String[][] arr = new String[][] {
+			{"ИВАНОВ ИВАН ИВАНОВИЧ", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", "12:00-16:00", ""},
+			{"ИВАНОВ ИВАН ИВАНОВИЧ", "08:00-12:00", "08:00-10:00", "08:00-16:00", "", "", "", ""},
+			{"ПЕТРОВ ПЕТР ПЕТРОВИЧ", "12:00-16:00", "", "12:00-16:00", "", "12:00-16:00", "", ""},
+			// ...
+		};
+
+		WorkTimeParser parser = new WorkTimeParser();
+		String[][] result = parser.prepareWorkTime(arr);
+
+		for (String[] row : result) {
+			System.out.println(Arrays.toString(row));
+		}
 	}
-	
 }
 
